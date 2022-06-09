@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="61.161">
+    <testcase classname="feature to test register for webinar" name="user successfully register for webinar with valid credentials" time="16.68">
+        <system-out><![CDATA[Given User is on webinar page...............................................passed
+When user enter valid name and mobile number................................passed
+And clicks on Register for webinar button...................................passed
+Then user enter valid Email and Choose an online session....................passed
+And click on Confirm........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="feature to test register for webinar" name="user successfully register for webinar with invalid credentials" time="18.088">
+        <failure message="invalid session id&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-UVQHB6D', ip: '192.168.0.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.72, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52521}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: dfc4fd1e6012040c43a5b073a37de97b" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[Given User is on webinar page...............................................passed
+When user enter Invalid2 sakthivel and 8610362115...........................passed
+And clicks on Register for webinar button...................................passed
+Then user enter invalid2 sakthivel%gmail.com and 18 Nov,Wednesday -6 PM.....passed
+And click on Confirm........................................................passed
+Then user checking page2 error message......................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-UVQHB6D', ip: '192.168.0.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.72, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52521}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dfc4fd1e6012040c43a5b073a37de97b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+	at StepsDefinitions.THwebinar.user_checking_page2_error_message(THwebinar.java:102)
+	at ✽.user checking page2 error message(file:///D:/Cucumber%20Frameworks/TwinHealthWeb/src/test/resources/Features/THwebinar.feature:16)
+]]></failure>
+    </testcase>
+    <testcase classname="feature to test register for webinar" name="user successfully register for webinar with invalid credentials 2" time="12.774">
+        <system-out><![CDATA[Given User is on webinar page...............................................passed
+When user enter Invalid sakthivel1 and 86103621155..........................passed
+And clicks on Register for webinar button...................................passed
+Then user checking page1 error message......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="feature to test register for webinar" name="user successfully register for webinar with invalid credentials 3" time="13.088">
+        <system-out><![CDATA[Given User is on webinar page...............................................passed
+When user enter Invalid abcd$ and 86103.....................................passed
+And clicks on Register for webinar button...................................passed
+Then user checking page1 error message......................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
